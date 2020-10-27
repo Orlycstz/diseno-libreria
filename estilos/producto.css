@@ -1,0 +1,329 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-image: url(../img/fondodelbody/country-quilt.png);
+  background-repeat: repeat;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+.contenedor header{
+    /*width: 90%;*/
+    /*max-width: 1000px;*/
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor header .usuario{
+    width: 100%;
+    padding: 10px 0;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background-image: url(../img/papeleria.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.contenedor header .usuario .navegacion,
+.contenedor header .usuario .redes-sociales nav{
+    margin-top: 20px;
+}
+
+.contenedor header .usuario .navegacion a{
+    font-size: 13px;
+    border: 2px solid blueviolet;
+    border-radius: 9%;
+    padding: 8px;
+    background-color: blueviolet;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    margin-left: 15px;
+}
+
+.contenedor header .usuario .navegacion a .user{
+    color: white;
+    padding-right:5px;
+}
+.contenedor header .usuario .redes-sociales nav{
+    margin-right: 25px;
+}
+.contenedor header .usuario .redes-sociales nav a{
+    padding: 7px;
+    background-color: #522B47;
+    border-radius: 5px;
+    margin: 0 6px;
+    font-size: 1.6em;
+    color:white;
+    transition: all .3s ease;
+    text-decoration: none;
+}
+/*.contenedor header .usuario .buscador{
+    margin-top: 20px;
+    margin-right: 15px;
+}*/
+
+/* menu de barra */
+.contenedor .barra{
+    background-color:darkorchid;
+    position: relative;
+}
+.contenedor .barra .menu ul{
+    list-style: none;
+}
+
+.contenedor .barra .menu > ul > li{
+    float: left;
+} 
+
+.contenedor .barra .menu ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contenedor .barra .menu ul li a{
+    color: white;
+    display: inline-block;
+    width: 150px;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.contenedor .barra .menu ul li ul li a{
+    color: aliceblue;
+}
+.contenedor .barra .menu ul li a:hover{
+    background-color: blueviolet;
+}
+
+.contenedor .barra .menu .buscador input{
+    margin-top: 16px;
+    margin-left: 120px;
+    width: 250px;
+    height: 23px;
+    border-color:darkmagenta;
+    background-color: white;
+    font-size: 1.3em;
+}
+
+.contenedor .barra .menu ul li .carrito{
+   color: white;
+   font-size: 1.6em;
+   padding: 13px;
+   margin-top: 1px;
+}
+.contenedor .barra .menu ul li .carrito:hover{
+    background-color: #522B47;
+}
+/*segundo nivel de menu*/
+
+.contenedor .barra .menu ul ul{
+    position: absolute;
+    display: none;
+    top: 100%;
+    border-top-color: darkorchid;
+}
+
+.contenedor .barra .menu ul li:hover > ul{
+    display: block;
+    background-color:#522B47;
+}
+
+.contenedor .barra .menu ul li:hover{
+    background-color: darkorchid;
+}
+
+
+/*informacion detalle del producto*/
+.compra{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+}
+
+.compra article .articulo{
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 20px 0;
+    margin-left: 100px;
+}
+
+.compra article .articulo img{
+    width: 50%;
+    height: 40%;
+    border: 2px solid blueviolet;
+    margin-left: 0px;
+}
+
+.compra .informacion{
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 30px;
+    height: 50%;
+}
+
+.compra .informacion .detalle{
+    margin-left: -60px;
+    border: 3px solid blueviolet;
+    padding: 30px;
+}
+
+.compra .informacion .detalle h2{
+    font-size: 1.4em;
+    font-family: sans-serif;
+    margin-bottom: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.compra .informacion .detalle h3{
+    font-family: sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.compra .informacion .detalle h2 span{
+   color: #522B47;
+}
+
+.compra .informacion .detalle div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.compra .informacion .detalle div label{
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.compra .informacion .detalle div input[type="range"],
+.compra .informacion .detalle div input[type="text"],
+.compra .informacion .detalle div input[type="submit"]{
+    margin-bottom: 10px;
+}
+
+.compra .informacion .detalle div input[type="text"]{
+    width: 40%;
+    border:2px solid blue;
+}
+
+.compra .informacion .detalle div .enviar{
+    height: 30px;
+    background: transparent;
+    background-color: #522B47;
+    border: 2px solid #f1f1f1;
+    color: white;
+}
+/*articulos de interes*/
+
+div h2{
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.interes-producto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article .interes{
+    margin-top: 20px;
+}
+
+article .interes .imagen img{
+    width: 150px;
+    border: 2px solid blue;
+}
+
+article .informacion{
+  background-color: blue;
+  width: 150px;
+  margin-top: -5px;
+  padding: 8px;
+  border-radius: 0 0 10px 10px;
+}
+
+article .informacion h3{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(224,224, 224);
+    margin-bottom: 5px;
+}
+
+article .informacion h4{
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azure;
+}
+
+/*footer*/
+
+.pie{
+    background-color: #f1f1f1;
+}
+
+.pie .informacion{
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pie .informacion p,
+.pie .informacion h2{
+    margin-top: 10px;
+    font-size: 1.6em;
+}
+
+.pie .informacion p span{
+    color: blue;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.pie .siguenos{
+  width: 100%;
+  padding: 5px 50px;
+}
+
+.pie .siguenos .redes-sociales{
+    text-align: center;
+}
+
+.pie .siguenos p{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.pie .siguenos .redes-sociales a{
+    padding: 0 10px;
+    font-size: 1.4em;
+
+}

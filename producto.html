@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximun-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilos/producto.css">
+    <link rel="stylesheet" href="estilos/font-awesome.min.css">
+    <link rel="icon" href="img/cabecera/favicon (1).ico" type="image/x-icon">
+    <title>Producto</title>
+</head>
+<body>
+    <div class="contenedor">
+        
+        <header>
+            <div class="usuario">
+                <nav class="navegacion">
+                    <a href="#"><i class="user fa fa-user"></i>Iniciar sesion</a>
+                    <a href="">Registrate</a>
+                </nav>
+            <div class="redes-sociales">
+                <nav>
+                    <a href="index.html">Libreria IHC</a>
+                </nav>
+            </div>
+            </div>
+        </header>
+
+        <div class="barra">
+            
+            <nav class="menu">
+                <ul>
+                    <li><a href="">Oficina</a></li>
+                    <li><a href="#">Tienda</a>
+                    <ul>
+                        <li><a href="">Mi cuenta</a></li>
+                        <li><a href="">Donde estamos ubicados?</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">Escolares</a></li>
+                    <li>
+                    <div class="buscador">
+                        <input type="text" placeholder="Buscar...">  
+                    </div>    
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--producto-->
+        <div class="compra">
+            <article>
+                <div class="articulo">
+                    <img src="img/imagenes/bolso.jpg" alt="bolso libreria de ihc">
+                </div>
+            </article>
+            <section class="informacion">
+                <div class="detalle">
+                    <h2>Bolso: <span>F&M</span></h2>
+                    <h3>Bsf 3.000.000,00</h3>
+                    <div>
+                        <label for="">Cantidad</label>
+                        <input type="range" min="0" value="0" max="100" onchange="rango()" step="1" id="get">
+                        <input type="text" value="0" id="valor">
+                        <input class="enviar" type="submit" value="Agregar al carrito +" name="" id="">    
+                    </div>
+                </div>
+            </section>
+        </div>
+      <!--Articulo de interes-->
+       <div>
+            <h2>Otros Productos</h2>
+       </div> 
+      <article class="interes-producto">
+         <section class="interes">
+          <div class="imagen">
+             <a href="">
+                <img src="img/imagenes/cuaderno.jpg" alt="libreria IHC">
+             </a>
+          </div>
+          <div class="informacion">
+              <h3>Cuaderno: F&M</h3>
+              <h4>BsF: 5.000.000,00</h4>
+          </div>
+         </section>
+         <section class="interes">
+            <div class="imagen">
+                <a href="">
+                    <img src="img/imagenes/archivadores.jpg" alt="libreria IHC">
+                </a>
+            </div>
+            <div class="informacion">
+                <h3>Cuaderno: F&M</h3>
+                <h4>BsF: 5.000.000,00</h4>
+            </div>
+        </section>
+        <section class="interes">
+            <div class="imagen">
+                <a href="">
+                    <img src="img/imagenes/marcadores.jpg" alt="libreria IHC">
+                </a>
+            </div>
+            <div class="informacion">
+                <h3>Cuaderno: F&M</h3>
+                <h4>BsF: 5.000.000,00</h4>
+            </div>
+        </section>
+        <section class="interes">
+            <div class="imagen">
+                <a href="">
+                    <img src="img/imagenes/sacapuntas.jpg" alt="libreria IHC">
+                </a>
+            </div>
+            <div class="informacion">
+                <h3>Cuaderno: F&M</h3>
+                <h4>BsF: 5.000.000,00</h4>
+            </div>
+        </section>
+        <section class="interes">
+            <div class="imagen">
+                <a href="">
+                    <img src="img/imagenes/marcahuellas.jpg" alt="libreria IHC">
+                </a>
+            </div>
+            <div class="informacion">
+                <h3>Cuaderno: F&M</h3>
+                <h4>BsF: 5.000.000,00</h4>
+            </div>
+        </section>
+       </article>
+
+       <!--pie de pagina-->
+        <footer class="pie">
+            <div class="informacion">
+                <h2>Libreria</h2>
+                <p>RIF <span> J-30787201-2 </span></p>
+                <hr>
+            </div>
+            <div class="siguenos">
+                <nav class="redes-sociales">
+                    <a href=""><i class="fa fa-envelope-square"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                </nav>
+                <p class="derechos">2018<span> &copy;</span> Libreria IHC</p>
+            </div>
+        </footer>
+    
+    
+    </div>
+    
+    <script>
+        function rango(){
+        var valor = document.getElementById("get").value;
+        document.getElementById("valor").value = valor;
+        }
+    </script>
+</body>
+</html>
